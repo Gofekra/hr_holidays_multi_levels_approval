@@ -10,10 +10,10 @@
 				<notebook>
 					<page string="Holidays approvers chain" groups="hr.group_hr_user">
 						<button string="Set default chain" name="set_default_validation_chain" type="object" class="oe_highlight" help="Generate approvers chain based on management hierarchy"/>
-						<field name="holidays_approvers" context="{'dafault_employee': id}">
+						<field name="holidays_approvers" context="{'default_employee': id}">
 							<tree  editable="bottom">
 								<field name="sequence" widget="handle"/>
-								<field name="approver"/>
+								<field name="approver" options="{'no_create':True}"/>
 							</tree>
 						</field>
 						<group>
